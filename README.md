@@ -1,6 +1,19 @@
 # IntoRealismAmateur
 ComfyUI workflow Dockerized via [comfyui-wizard](https://comfy.getrunpod.io).
 Submission: https://comfy.getrunpod.io/dashboard/submissions/kd715ytf3rg5qxsytb0f4tv90189cmbb
+## Pull the prebuilt image
+
+We've already built and published this image on Docker Hub:
+
+```bash
+docker pull timpietruskyrunpod/comfyui-wizard:kd715ytf3rg5qxsytb0f4tv90189cmbb
+docker run --rm --gpus all -p 8188:8188 timpietruskyrunpod/comfyui-wizard:kd715ytf3rg5qxsytb0f4tv90189cmbb
+```
+
+Then open http://localhost:8188.
+
+---
+
 ## Build it yourself
 ```bash
 docker build -t my-comfy-workflow .
